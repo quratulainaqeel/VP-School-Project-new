@@ -40,6 +40,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvSearch)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPrint
@@ -47,7 +48,7 @@
             this.btnPrint.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Location = new System.Drawing.Point(684, 101);
+            this.btnPrint.Location = new System.Drawing.Point(1129, 137);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 36);
             this.btnPrint.TabIndex = 49;
@@ -59,7 +60,7 @@
             this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSearch.Location = new System.Drawing.Point(603, 101);
+            this.btnSearch.Location = new System.Drawing.Point(1048, 137);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 36);
             this.btnSearch.TabIndex = 48;
@@ -87,7 +88,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gvSearch.DefaultCellStyle = dataGridViewCellStyle2;
             this.gvSearch.GridColor = System.Drawing.SystemColors.InactiveCaption;
-            this.gvSearch.Location = new System.Drawing.Point(41, 145);
+            this.gvSearch.Location = new System.Drawing.Point(149, 198);
             this.gvSearch.Name = "gvSearch";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -97,15 +98,15 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvSearch.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gvSearch.Size = new System.Drawing.Size(718, 308);
+            this.gvSearch.Size = new System.Drawing.Size(1064, 369);
             this.gvSearch.TabIndex = 47;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(94, 106);
+            this.txtSearch.Location = new System.Drawing.Point(212, 142);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(503, 27);
+            this.txtSearch.Size = new System.Drawing.Size(830, 27);
             this.txtSearch.TabIndex = 46;
             // 
             // label2
@@ -114,7 +115,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Highlight;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Location = new System.Drawing.Point(245, 34);
+            this.label2.Location = new System.Drawing.Point(514, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(305, 31);
             this.label2.TabIndex = 45;
@@ -123,19 +124,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-2, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 65);
+            this.panel1.Size = new System.Drawing.Size(1380, 65);
             this.panel1.TabIndex = 50;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(47, 118);
+            this.label1.Location = new System.Drawing.Point(156, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 51;
             this.label1.Text = "Search";
             // 
@@ -144,18 +147,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(800, 496);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.gvSearch);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCourseAllocateDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Course Allocate Detail";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gvSearch)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -55,14 +55,14 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(530, 55);
+            this.label2.Location = new System.Drawing.Point(798, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 1;
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(348, 149);
+            this.txtFirstName.Location = new System.Drawing.Point(616, 211);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(168, 20);
             this.txtFirstName.TabIndex = 5;
@@ -72,7 +72,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label3.Location = new System.Drawing.Point(287, 153);
+            this.label3.Location = new System.Drawing.Point(555, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(609, 146);
+            this.txtLastName.Location = new System.Drawing.Point(983, 210);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(168, 20);
             this.txtLastName.TabIndex = 7;
@@ -90,7 +90,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Window;
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label4.Location = new System.Drawing.Point(547, 149);
+            this.label4.Location = new System.Drawing.Point(921, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 6;
@@ -98,7 +98,7 @@
             // 
             // txtCourseName
             // 
-            this.txtCourseName.Location = new System.Drawing.Point(348, 101);
+            this.txtCourseName.Location = new System.Drawing.Point(617, 132);
             this.txtCourseName.Name = "txtCourseName";
             this.txtCourseName.Size = new System.Drawing.Size(168, 20);
             this.txtCourseName.TabIndex = 11;
@@ -108,7 +108,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Window;
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Location = new System.Drawing.Point(274, 105);
+            this.label6.Location = new System.Drawing.Point(543, 136);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 10;
@@ -119,7 +119,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Window;
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(566, 102);
+            this.label7.Location = new System.Drawing.Point(921, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 12;
@@ -131,7 +131,7 @@
             this.label8.BackColor = System.Drawing.SystemColors.Highlight;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label8.Location = new System.Drawing.Point(295, 15);
+            this.label8.Location = new System.Drawing.Point(563, 15);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(221, 31);
             this.label8.TabIndex = 14;
@@ -139,7 +139,7 @@
             // 
             // txtSection
             // 
-            this.txtSection.Location = new System.Drawing.Point(82, 153);
+            this.txtSection.Location = new System.Drawing.Point(253, 215);
             this.txtSection.Name = "txtSection";
             this.txtSection.Size = new System.Drawing.Size(168, 20);
             this.txtSection.TabIndex = 18;
@@ -149,7 +149,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(24, 156);
+            this.label5.Location = new System.Drawing.Point(195, 218);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 17;
@@ -157,7 +157,7 @@
             // 
             // txtCourseID
             // 
-            this.txtCourseID.Location = new System.Drawing.Point(82, 101);
+            this.txtCourseID.Location = new System.Drawing.Point(254, 132);
             this.txtCourseID.Name = "txtCourseID";
             this.txtCourseID.Size = new System.Drawing.Size(168, 20);
             this.txtCourseID.TabIndex = 20;
@@ -167,7 +167,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Window;
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(24, 104);
+            this.label10.Location = new System.Drawing.Point(196, 135);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 13);
             this.label10.TabIndex = 19;
@@ -178,9 +178,9 @@
             this.gvCourseAllocate.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvCourseAllocate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvCourseAllocate.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gvCourseAllocate.Location = new System.Drawing.Point(27, 273);
+            this.gvCourseAllocate.Location = new System.Drawing.Point(134, 353);
             this.gvCourseAllocate.Name = "gvCourseAllocate";
-            this.gvCourseAllocate.Size = new System.Drawing.Size(750, 292);
+            this.gvCourseAllocate.Size = new System.Drawing.Size(1104, 264);
             this.gvCourseAllocate.TabIndex = 24;
             // 
             // btnInsert
@@ -188,7 +188,7 @@
             this.btnInsert.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnInsert.Location = new System.Drawing.Point(221, 203);
+            this.btnInsert.Location = new System.Drawing.Point(449, 283);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 41);
             this.btnInsert.TabIndex = 44;
@@ -200,7 +200,7 @@
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnUpdate.Location = new System.Drawing.Point(377, 203);
+            this.btnUpdate.Location = new System.Drawing.Point(644, 283);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 41);
             this.btnUpdate.TabIndex = 45;
@@ -212,7 +212,7 @@
             this.btnDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnDelete.Location = new System.Drawing.Point(523, 203);
+            this.btnDelete.Location = new System.Drawing.Point(839, 283);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 41);
             this.btnDelete.TabIndex = 46;
@@ -225,7 +225,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(0, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 65);
+            this.panel1.Size = new System.Drawing.Size(1371, 65);
             this.panel1.TabIndex = 47;
             // 
             // cmbClass
@@ -242,7 +242,7 @@
             "Class 8th",
             "Class 9th",
             "Matric"});
-            this.cmbClass.Location = new System.Drawing.Point(609, 98);
+            this.cmbClass.Location = new System.Drawing.Point(984, 131);
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Size = new System.Drawing.Size(168, 21);
             this.cmbClass.TabIndex = 48;
@@ -252,7 +252,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1095, 580);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -273,7 +273,9 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCourseAllocate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Course Allocate";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gvCourseAllocate)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
