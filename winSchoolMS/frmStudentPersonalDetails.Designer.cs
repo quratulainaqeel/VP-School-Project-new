@@ -51,7 +51,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.grdStudentPersonalDetails = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnInsert = new System.Windows.Forms.Button();
@@ -86,9 +86,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(114, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Full Name";
+            this.label1.Text = "First Name";
             // 
             // label2
             // 
@@ -299,13 +299,13 @@
             this.panel1.Size = new System.Drawing.Size(1376, 65);
             this.panel1.TabIndex = 63;
             // 
-            // txtFullName
+            // txtFirstName
             // 
-            this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullName.Location = new System.Drawing.Point(174, 141);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(165, 20);
-            this.txtFullName.TabIndex = 64;
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(174, 141);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(165, 20);
+            this.txtFirstName.TabIndex = 64;
             // 
             // txtLastName
             // 
@@ -416,7 +416,7 @@
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.grdStudentPersonalDetails);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtemail);
@@ -475,7 +475,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView grdStudentPersonalDetails;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnInsert;

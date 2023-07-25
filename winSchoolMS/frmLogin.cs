@@ -39,7 +39,7 @@ namespace winSchoolMS
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            frmDashBoard obj = new frmDashBoard();
+            Main obj = new Main();
             obj.Show();     
         }
 

@@ -67,8 +67,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label8.Location = new System.Drawing.Point(28, 66);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 16);
@@ -78,8 +79,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(182, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 16);
@@ -89,7 +91,7 @@
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
             this.txtName.Location = new System.Drawing.Point(116, 60);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
@@ -98,7 +100,7 @@
             // 
             // txtPassward
             // 
-            this.txtPassward.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassward.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPassward.Location = new System.Drawing.Point(116, 142);
             this.txtPassward.Multiline = true;
             this.txtPassward.Name = "txtPassward";
@@ -108,8 +110,9 @@
             // lblCreateanAccount
             // 
             this.lblCreateanAccount.AutoSize = true;
-            this.lblCreateanAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateanAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblCreateanAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblCreateanAccount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblCreateanAccount.Location = new System.Drawing.Point(274, 266);
             this.lblCreateanAccount.Name = "lblCreateanAccount";
             this.lblCreateanAccount.Size = new System.Drawing.Size(116, 16);
@@ -120,8 +123,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label7.Location = new System.Drawing.Point(29, 150);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 16);
@@ -131,8 +135,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(163, 266);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 15);
@@ -142,8 +147,9 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogin.Location = new System.Drawing.Point(297, 209);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(92, 41);
@@ -155,8 +161,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.label2.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(901, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 37);
@@ -166,6 +173,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::winSchoolMS.Properties.Resources._1311589_667;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(658, 728);
@@ -176,6 +184,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::winSchoolMS.Properties.Resources.logo_removebg_preview;
+            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox2.Location = new System.Drawing.Point(922, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(161, 143);

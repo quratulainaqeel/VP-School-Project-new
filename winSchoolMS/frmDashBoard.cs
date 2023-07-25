@@ -44,7 +44,7 @@ namespace winSchoolMS
 
         private void newTeacherToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TeacherInformation obj = new TeacherInformation();
+            frmTeacherInformation obj = new frmTeacherInformation();
             obj.Show();
         }
 
