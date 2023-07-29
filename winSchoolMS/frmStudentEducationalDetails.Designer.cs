@@ -87,6 +87,7 @@
             this.txtenrollmentnumber.Name = "txtenrollmentnumber";
             this.txtenrollmentnumber.Size = new System.Drawing.Size(165, 20);
             this.txtenrollmentnumber.TabIndex = 31;
+            this.txtenrollmentnumber.TextChanged += new System.EventHandler(this.txtenrollmentnumber_TextChanged);
             // 
             // label2
             // 

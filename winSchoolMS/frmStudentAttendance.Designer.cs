@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudentAttendance));
-            this.gvTeacherAttendance = new System.Windows.Forms.DataGridView();
+            this.gvStudentAttendance = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.txtEnrollmentNo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.dtpTime = new System.Windows.Forms.DateTimePicker();
@@ -51,19 +50,20 @@
             this.txtfullname = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cmbSection = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gvTeacherAttendance)).BeginInit();
+            this.cmbEnrollmentNo = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gvStudentAttendance)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gvTeacherAttendance
+            // gvStudentAttendance
             // 
-            this.gvTeacherAttendance.BackgroundColor = System.Drawing.Color.LightGray;
-            this.gvTeacherAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvTeacherAttendance.GridColor = System.Drawing.Color.LightGray;
-            this.gvTeacherAttendance.Location = new System.Drawing.Point(127, 427);
-            this.gvTeacherAttendance.Name = "gvTeacherAttendance";
-            this.gvTeacherAttendance.Size = new System.Drawing.Size(1120, 271);
-            this.gvTeacherAttendance.TabIndex = 29;
+            this.gvStudentAttendance.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gvStudentAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvStudentAttendance.GridColor = System.Drawing.Color.LightGray;
+            this.gvStudentAttendance.Location = new System.Drawing.Point(127, 427);
+            this.gvStudentAttendance.Name = "gvStudentAttendance";
+            this.gvStudentAttendance.Size = new System.Drawing.Size(1120, 271);
+            this.gvStudentAttendance.TabIndex = 29;
             // 
             // label2
             // 
@@ -121,6 +121,7 @@
             this.btnInsert.TabIndex = 68;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
@@ -133,14 +134,6 @@
             this.btnUpdate.TabIndex = 69;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // txtEnrollmentNo
-            // 
-            this.txtEnrollmentNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnrollmentNo.Location = new System.Drawing.Point(223, 155);
-            this.txtEnrollmentNo.Name = "txtEnrollmentNo";
-            this.txtEnrollmentNo.Size = new System.Drawing.Size(165, 20);
-            this.txtEnrollmentNo.TabIndex = 71;
             // 
             // panel1
             // 
@@ -155,6 +148,7 @@
             // 
             this.cmbClass.FormattingEnabled = true;
             this.cmbClass.Items.AddRange(new object[] {
+            "First Select Class",
             "1",
             "2",
             "3",
@@ -169,6 +163,7 @@
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Size = new System.Drawing.Size(165, 21);
             this.cmbClass.TabIndex = 76;
+            this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
             // dtpTime
             // 
@@ -190,6 +185,7 @@
             // 
             // dtpDate
             // 
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDate.Location = new System.Drawing.Point(634, 226);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(175, 20);
@@ -297,12 +293,22 @@
             this.cmbSection.Size = new System.Drawing.Size(165, 21);
             this.cmbSection.TabIndex = 87;
             // 
+            // cmbEnrollmentNo
+            // 
+            this.cmbEnrollmentNo.FormattingEnabled = true;
+            this.cmbEnrollmentNo.Location = new System.Drawing.Point(223, 154);
+            this.cmbEnrollmentNo.Name = "cmbEnrollmentNo";
+            this.cmbEnrollmentNo.Size = new System.Drawing.Size(165, 21);
+            this.cmbEnrollmentNo.TabIndex = 88;
+            this.cmbEnrollmentNo.SelectedIndexChanged += new System.EventHandler(this.cmbEnrollmentNo_SelectedIndexChanged);
+            // 
             // frmStudentAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.cmbEnrollmentNo);
             this.Controls.Add(this.cmbSection);
             this.Controls.Add(this.txtfullname);
             this.Controls.Add(this.label11);
@@ -311,13 +317,12 @@
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbClass);
-            this.Controls.Add(this.txtEnrollmentNo);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.gvTeacherAttendance);
+            this.Controls.Add(this.gvStudentAttendance);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rdbLeave);
             this.Controls.Add(this.rdbAbsent);
@@ -329,7 +334,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Student Attendance";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.gvTeacherAttendance)).EndInit();
+            this.Load += new System.EventHandler(this.frmStudentAttendance_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvStudentAttendance)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -339,14 +345,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView gvTeacherAttendance;
+        private System.Windows.Forms.DataGridView gvStudentAttendance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.TextBox txtEnrollmentNo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbClass;
         private System.Windows.Forms.DateTimePicker dtpTime;
@@ -361,5 +366,6 @@
         private System.Windows.Forms.TextBox txtfullname;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbSection;
+        private System.Windows.Forms.ComboBox cmbEnrollmentNo;
     }
 }

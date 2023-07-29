@@ -133,5 +133,28 @@ namespace winSchoolMS
 
             MessageBox.Show("Data Deleted Sucessfully");
         }
+
+        private void txtenrollmentnumber_TextChanged(object sender, EventArgs e)
+        {
+            string QRY = "SELECT * FROM tblStudentPersonalDetails WHERE EnrollmentNo = @EnrollmentNo";
+            SqlDataAdapter da = new SqlDataAdapter(QRY, con);
+
+            // Add the parameter to the SqlDataAdapter
+            da.SelectCommand.Parameters.AddWithValue("@EnrollmentNo", txtenrollmentnumber.Text);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                txtfullname.Text = dt.Rows[0]["FullName"].ToString();
+                txtFatherName.Text = dt.Rows[0]["FatherName"].ToString();
+            }
+            else
+            {
+                txtfullname.Text = string.Empty;
+                txtfullname.Text = string.Empty;                
+            }
+        }
     }
 }
