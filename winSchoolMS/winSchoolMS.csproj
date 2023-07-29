@@ -131,11 +131,11 @@
     <Compile Include="FrmExaminationDetail.Designer.cs">
       <DependentUpon>FrmExaminationDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFeeDetail.cs">
+    <Compile Include="frmFeesPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFeeDetail.Designer.cs">
-      <DependentUpon>frmFeeDetail.cs</DependentUpon>
+    <Compile Include="frmFeesPayment.Designer.cs">
+      <DependentUpon>frmFeesPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -205,8 +205,8 @@
     <EmbeddedResource Include="FrmExaminationDetail.resx">
       <DependentUpon>FrmExaminationDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFeeDetail.resx">
-      <DependentUpon>frmFeeDetail.cs</DependentUpon>
+    <EmbeddedResource Include="frmFeesPayment.resx">
+      <DependentUpon>frmFeesPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

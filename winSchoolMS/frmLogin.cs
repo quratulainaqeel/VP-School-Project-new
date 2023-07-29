@@ -40,9 +40,15 @@ namespace winSchoolMS
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             Main obj = new Main();
-            obj.Show();     
-        }
+            obj.FormClosed += Main_FormClosed;
+            obj.Show();
+            this.Hide();
 
+        }
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
         private void label4_Click_1(object sender, EventArgs e)
         {
             FrmForgetpassword obj = new FrmForgetpassword();

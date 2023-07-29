@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +37,8 @@
             this.educationalInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentsDetailViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teacherDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teacherDetailsViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.attendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.teacherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,27 +53,8 @@
             this.examinationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.examinationDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miscellinousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teacherDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teacherDetailsViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 599);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1370, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel.Text = "Status";
             // 
             // menuStrip2
             // 
@@ -130,6 +112,20 @@
             this.teacherToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.teacherToolStripMenuItem.Text = "Teacher";
             // 
+            // teacherDetailsToolStripMenuItem
+            // 
+            this.teacherDetailsToolStripMenuItem.Name = "teacherDetailsToolStripMenuItem";
+            this.teacherDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.teacherDetailsToolStripMenuItem.Text = "Teacher Information";
+            this.teacherDetailsToolStripMenuItem.Click += new System.EventHandler(this.teacherDetailsToolStripMenuItem_Click);
+            // 
+            // teacherDetailsViewToolStripMenuItem
+            // 
+            this.teacherDetailsViewToolStripMenuItem.Name = "teacherDetailsViewToolStripMenuItem";
+            this.teacherDetailsViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.teacherDetailsViewToolStripMenuItem.Text = "Teacher Details View";
+            this.teacherDetailsViewToolStripMenuItem.Click += new System.EventHandler(this.teacherDetailsViewToolStripMenuItem_Click);
+            // 
             // attendanceToolStripMenuItem
             // 
             this.attendanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -143,21 +139,21 @@
             // studentToolStripMenuItem1
             // 
             this.studentToolStripMenuItem1.Name = "studentToolStripMenuItem1";
-            this.studentToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.studentToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
             this.studentToolStripMenuItem1.Text = "Student";
             this.studentToolStripMenuItem1.Click += new System.EventHandler(this.studentToolStripMenuItem1_Click);
             // 
             // teacherToolStripMenuItem1
             // 
             this.teacherToolStripMenuItem1.Name = "teacherToolStripMenuItem1";
-            this.teacherToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.teacherToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
             this.teacherToolStripMenuItem1.Text = "Teacher";
             this.teacherToolStripMenuItem1.Click += new System.EventHandler(this.teacherToolStripMenuItem1_Click);
             // 
             // viewAttendanceToolStripMenuItem
             // 
             this.viewAttendanceToolStripMenuItem.Name = "viewAttendanceToolStripMenuItem";
-            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.viewAttendanceToolStripMenuItem.Text = "View Attendance";
             this.viewAttendanceToolStripMenuItem.Click += new System.EventHandler(this.viewAttendanceToolStripMenuItem_Click);
             // 
@@ -174,7 +170,7 @@
             // 
             this.feesToolStripMenuItem.Name = "feesToolStripMenuItem";
             this.feesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.feesToolStripMenuItem.Text = "Fees";
+            this.feesToolStripMenuItem.Text = "Fees Payment";
             this.feesToolStripMenuItem.Click += new System.EventHandler(this.feesToolStripMenuItem_Click);
             // 
             // defaulterStudentToolStripMenuItem
@@ -219,14 +215,14 @@
             // examinationToolStripMenuItem1
             // 
             this.examinationToolStripMenuItem1.Name = "examinationToolStripMenuItem1";
-            this.examinationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.examinationToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.examinationToolStripMenuItem1.Text = "Examination";
             this.examinationToolStripMenuItem1.Click += new System.EventHandler(this.examinationToolStripMenuItem1_Click);
             // 
             // examinationDetailToolStripMenuItem
             // 
             this.examinationDetailToolStripMenuItem.Name = "examinationDetailToolStripMenuItem";
-            this.examinationDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examinationDetailToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.examinationDetailToolStripMenuItem.Text = "Examination Detail";
             this.examinationDetailToolStripMenuItem.Click += new System.EventHandler(this.examinationDetailToolStripMenuItem_Click);
             // 
@@ -236,34 +232,18 @@
             this.miscellinousToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.miscellinousToolStripMenuItem.Text = "Miscellinous";
             // 
-            // teacherDetailsToolStripMenuItem
-            // 
-            this.teacherDetailsToolStripMenuItem.Name = "teacherDetailsToolStripMenuItem";
-            this.teacherDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.teacherDetailsToolStripMenuItem.Text = "Teacher Information";
-            this.teacherDetailsToolStripMenuItem.Click += new System.EventHandler(this.teacherDetailsToolStripMenuItem_Click);
-            // 
-            // teacherDetailsViewToolStripMenuItem
-            // 
-            this.teacherDetailsViewToolStripMenuItem.Name = "teacherDetailsViewToolStripMenuItem";
-            this.teacherDetailsViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.teacherDetailsViewToolStripMenuItem.Text = "Teacher Details View";
-            this.teacherDetailsViewToolStripMenuItem.Click += new System.EventHandler(this.teacherDetailsViewToolStripMenuItem_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 621);
             this.Controls.Add(this.menuStrip2);
-            this.Controls.Add(this.statusStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Main";
-            this.Text = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -271,9 +251,6 @@
 
         }
         #endregion
-
-        private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;

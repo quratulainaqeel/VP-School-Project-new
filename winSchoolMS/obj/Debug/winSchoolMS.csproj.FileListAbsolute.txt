@@ -99,7 +99,6 @@ H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmExamination.resour
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmDashBoard.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmDefultarstudent.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.FrmExaminationDetail.resources
-H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmFeeDetail.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmLogin.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmSignUp.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmTeacherDetailsView.resources
@@ -110,3 +109,4 @@ H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.exe
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.pdb
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.Main.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmTeacherInformation.resources
+H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmFeePayment.resources

@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashBoard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,16 +46,6 @@
             this.panel1.Size = new System.Drawing.Size(1370, 53);
             this.panel1.TabIndex = 3;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(510, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(408, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Active Learning Schooling System";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::winSchoolMS.Properties.Resources.logo_removebg_preview;
@@ -65,6 +55,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(510, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(408, 29);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Active Learning Schooling System";
             // 
             // frmDashBoard
             // 

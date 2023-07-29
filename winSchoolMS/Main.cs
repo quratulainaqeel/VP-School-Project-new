@@ -161,7 +161,7 @@ namespace winSchoolMS
 
         private void feesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmFeeDetail obj = new frmFeeDetail();
+            frmFeePayment obj = new frmFeePayment();
             obj.MdiParent = this;
             obj.Show();
         }
