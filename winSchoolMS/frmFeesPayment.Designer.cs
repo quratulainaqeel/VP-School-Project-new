@@ -54,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.txtMonthlyfee = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbMonth = new System.Windows.Forms.ComboBox();
@@ -63,6 +62,7 @@
             this.cmbFullName = new System.Windows.Forms.ComboBox();
             this.cmbSection = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.dtpTime = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.gvFeesPayment)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -333,14 +333,6 @@
             this.dtpDate.Size = new System.Drawing.Size(165, 20);
             this.dtpDate.TabIndex = 73;
             // 
-            // dtpTime
-            // 
-            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpTime.Location = new System.Drawing.Point(1051, 286);
-            this.dtpTime.Name = "dtpTime";
-            this.dtpTime.Size = new System.Drawing.Size(165, 20);
-            this.dtpTime.TabIndex = 74;
-            // 
             // txtMonthlyfee
             // 
             this.txtMonthlyfee.Location = new System.Drawing.Point(1051, 179);
@@ -367,7 +359,7 @@
             "January",
             "February",
             "March",
-            "Aprail",
+            "April",
             "May",
             "June",
             "July",
@@ -435,12 +427,22 @@
             this.label15.TabIndex = 83;
             this.label15.Text = "Section";
             // 
+            // dtpTime
+            // 
+            this.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpTime.Location = new System.Drawing.Point(1051, 288);
+            this.dtpTime.Name = "dtpTime";
+            this.dtpTime.ShowUpDown = true;
+            this.dtpTime.Size = new System.Drawing.Size(165, 20);
+            this.dtpTime.TabIndex = 85;
+            // 
             // frmFeePayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.dtpTime);
             this.Controls.Add(this.cmbSection);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.cmbFullName);
@@ -449,7 +451,6 @@
             this.Controls.Add(this.Label);
             this.Controls.Add(this.txtMonthlyfee);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dtpTime);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.txtEnrollmentNo);
@@ -515,7 +516,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbClass;
         private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.DateTimePicker dtpTime;
         private System.Windows.Forms.TextBox txtMonthlyfee;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cmbMonth;
@@ -524,5 +524,6 @@
         private System.Windows.Forms.ComboBox cmbFullName;
         private System.Windows.Forms.ComboBox cmbSection;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DateTimePicker dtpTime;
     }
 }

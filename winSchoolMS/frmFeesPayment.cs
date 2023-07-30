@@ -45,6 +45,9 @@ namespace winSchoolMS
             FullNamedt.Rows.InsertAt(dr, 0);
             cmbFullName.SelectedIndex = 0;
 
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
         }
 
 
@@ -71,6 +74,10 @@ namespace winSchoolMS
                 cmbClass.Text = string.Empty;
                 cmbSection.Text = string.Empty;
             }
+
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
         }
 
         private void txtMonthlyfee_TextChanged(object sender, EventArgs e)
@@ -141,6 +148,10 @@ namespace winSchoolMS
             da.Fill(dt);
             gvFeesPayment.DataSource = dt;
 
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
+
             MessageBox.Show("Data Inserted Sucessfully");
 
 
@@ -176,6 +187,10 @@ namespace winSchoolMS
             da.Fill(dt);
             gvFeesPayment.DataSource = dt;
 
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
+
             MessageBox.Show("Data Updated Sucessfully");
         }
 
@@ -209,6 +224,10 @@ namespace winSchoolMS
             dtpDate.Text = date;
             dtpTime.Text = time;
             txtTotalAmount.Text = totalamount;
+
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -238,6 +257,10 @@ namespace winSchoolMS
             txtTotalAmount.Text = "";
             dtpDate.Value = DateTime.Today;
             dtpTime.Value = DateTime.Now;
+
+            cmbFullName.Enabled = false;
+            cmbClass.Enabled = false;
+            cmbSection.Enabled = false;
 
             MessageBox.Show("Data Deleted Sucessfully");
         }

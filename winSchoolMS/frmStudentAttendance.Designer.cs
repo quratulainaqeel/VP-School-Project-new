@@ -51,6 +51,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.cmbSection = new System.Windows.Forms.ComboBox();
             this.cmbEnrollmentNo = new System.Windows.Forms.ComboBox();
+            this.cmbMonth = new System.Windows.Forms.ComboBox();
+            this.Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvStudentAttendance)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,8 +64,9 @@
             this.gvStudentAttendance.GridColor = System.Drawing.Color.LightGray;
             this.gvStudentAttendance.Location = new System.Drawing.Point(127, 427);
             this.gvStudentAttendance.Name = "gvStudentAttendance";
-            this.gvStudentAttendance.Size = new System.Drawing.Size(1120, 271);
+            this.gvStudentAttendance.Size = new System.Drawing.Size(1120, 242);
             this.gvStudentAttendance.TabIndex = 29;
+            this.gvStudentAttendance.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvStudentAttendance_CellClick);
             // 
             // label2
             // 
@@ -93,7 +96,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Window;
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Location = new System.Drawing.Point(160, 229);
+            this.label6.Location = new System.Drawing.Point(150, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 32;
@@ -104,7 +107,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Window;
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(926, 153);
+            this.label7.Location = new System.Drawing.Point(936, 153);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 30;
@@ -134,6 +137,7 @@
             this.btnUpdate.TabIndex = 69;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel1
             // 
@@ -177,7 +181,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(936, 229);
+            this.label8.Location = new System.Drawing.Point(938, 232);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 13);
             this.label8.TabIndex = 81;
@@ -185,16 +189,16 @@
             // 
             // dtpDate
             // 
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(634, 226);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.Location = new System.Drawing.Point(223, 295);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(175, 20);
+            this.dtpDate.Size = new System.Drawing.Size(163, 20);
             this.dtpDate.TabIndex = 80;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(571, 229);
+            this.label9.Location = new System.Drawing.Point(150, 296);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 13);
             this.label9.TabIndex = 79;
@@ -205,7 +209,7 @@
             this.rdbPresent.AutoSize = true;
             this.rdbPresent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rdbPresent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rdbPresent.Location = new System.Drawing.Point(243, 276);
+            this.rdbPresent.Location = new System.Drawing.Point(634, 300);
             this.rdbPresent.Name = "rdbPresent";
             this.rdbPresent.Size = new System.Drawing.Size(61, 17);
             this.rdbPresent.TabIndex = 22;
@@ -218,7 +222,7 @@
             this.rdbAbsent.AutoSize = true;
             this.rdbAbsent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.rdbAbsent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rdbAbsent.Location = new System.Drawing.Point(319, 276);
+            this.rdbAbsent.Location = new System.Drawing.Point(710, 300);
             this.rdbAbsent.Name = "rdbAbsent";
             this.rdbAbsent.Size = new System.Drawing.Size(58, 17);
             this.rdbAbsent.TabIndex = 23;
@@ -230,7 +234,7 @@
             // 
             this.rdbLeave.AutoSize = true;
             this.rdbLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.rdbLeave.Location = new System.Drawing.Point(392, 276);
+            this.rdbLeave.Location = new System.Drawing.Point(783, 300);
             this.rdbLeave.Name = "rdbLeave";
             this.rdbLeave.Size = new System.Drawing.Size(55, 17);
             this.rdbLeave.TabIndex = 24;
@@ -243,7 +247,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(115, 278);
+            this.label5.Location = new System.Drawing.Point(533, 301);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 25;
@@ -260,6 +264,7 @@
             this.btnDelete.TabIndex = 70;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // txtfullname
             // 
@@ -274,7 +279,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.Window;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(571, 158);
+            this.label11.Location = new System.Drawing.Point(533, 157);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 13);
             this.label11.TabIndex = 85;
@@ -302,12 +307,46 @@
             this.cmbEnrollmentNo.TabIndex = 88;
             this.cmbEnrollmentNo.SelectedIndexChanged += new System.EventHandler(this.cmbEnrollmentNo_SelectedIndexChanged);
             // 
+            // cmbMonth
+            // 
+            this.cmbMonth.FormattingEnabled = true;
+            this.cmbMonth.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "Aprail",
+            "May",
+            "June",
+            "July",
+            "Augest",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmbMonth.Location = new System.Drawing.Point(634, 225);
+            this.cmbMonth.Name = "cmbMonth";
+            this.cmbMonth.Size = new System.Drawing.Size(165, 21);
+            this.cmbMonth.TabIndex = 90;
+            // 
+            // Label
+            // 
+            this.Label.AutoSize = true;
+            this.Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Label.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Label.Location = new System.Drawing.Point(533, 229);
+            this.Label.Name = "Label";
+            this.Label.Size = new System.Drawing.Size(37, 13);
+            this.Label.TabIndex = 89;
+            this.Label.Text = "Month";
+            // 
             // frmStudentAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.cmbMonth);
+            this.Controls.Add(this.Label);
             this.Controls.Add(this.cmbEnrollmentNo);
             this.Controls.Add(this.cmbSection);
             this.Controls.Add(this.txtfullname);
@@ -367,5 +406,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbSection;
         private System.Windows.Forms.ComboBox cmbEnrollmentNo;
+        private System.Windows.Forms.ComboBox cmbMonth;
+        private System.Windows.Forms.Label Label;
     }
 }

@@ -94,7 +94,6 @@ H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.FrmForgetpassword.res
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winproject.frmStudentAttendance.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winproject.frmTeacherAttendance.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmStudentPersonalDetails.resources
-H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmAttendenceVeiw.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmExamination.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmDashBoard.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmDefultarstudent.resources
@@ -110,3 +109,4 @@ H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.pdb
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.Main.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmTeacherInformation.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmFeePayment.resources
+H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmStudentAttendanceView.resources

@@ -139,22 +139,22 @@
             // studentToolStripMenuItem1
             // 
             this.studentToolStripMenuItem1.Name = "studentToolStripMenuItem1";
-            this.studentToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.studentToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
             this.studentToolStripMenuItem1.Text = "Student";
             this.studentToolStripMenuItem1.Click += new System.EventHandler(this.studentToolStripMenuItem1_Click);
             // 
             // teacherToolStripMenuItem1
             // 
             this.teacherToolStripMenuItem1.Name = "teacherToolStripMenuItem1";
-            this.teacherToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.teacherToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
             this.teacherToolStripMenuItem1.Text = "Teacher";
             this.teacherToolStripMenuItem1.Click += new System.EventHandler(this.teacherToolStripMenuItem1_Click);
             // 
             // viewAttendanceToolStripMenuItem
             // 
             this.viewAttendanceToolStripMenuItem.Name = "viewAttendanceToolStripMenuItem";
-            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.viewAttendanceToolStripMenuItem.Text = "View Attendance";
+            this.viewAttendanceToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.viewAttendanceToolStripMenuItem.Text = "Student Attendance View";
             this.viewAttendanceToolStripMenuItem.Click += new System.EventHandler(this.viewAttendanceToolStripMenuItem_Click);
             // 
             // accountsToolStripMenuItem
@@ -169,14 +169,14 @@
             // feesToolStripMenuItem
             // 
             this.feesToolStripMenuItem.Name = "feesToolStripMenuItem";
-            this.feesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.feesToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.feesToolStripMenuItem.Text = "Fees Payment";
             this.feesToolStripMenuItem.Click += new System.EventHandler(this.feesToolStripMenuItem_Click);
             // 
             // defaulterStudentToolStripMenuItem
             // 
             this.defaulterStudentToolStripMenuItem.Name = "defaulterStudentToolStripMenuItem";
-            this.defaulterStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.defaulterStudentToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.defaulterStudentToolStripMenuItem.Text = "Defaulter Student";
             this.defaulterStudentToolStripMenuItem.Click += new System.EventHandler(this.defaulterStudentToolStripMenuItem_Click);
             // 

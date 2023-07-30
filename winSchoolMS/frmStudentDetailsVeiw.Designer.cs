@@ -75,7 +75,7 @@
             this.txtsearch.Location = new System.Drawing.Point(110, 133);
             this.txtsearch.Multiline = true;
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(485, 27);
+            this.txtsearch.Size = new System.Drawing.Size(687, 27);
             this.txtsearch.TabIndex = 15;
             // 
             // gvStudentDetailSearch
@@ -94,7 +94,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSearch.Location = new System.Drawing.Point(1161, 124);
+            this.btnSearch.Location = new System.Drawing.Point(808, 125);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 36);
             this.btnSearch.TabIndex = 18;
@@ -117,7 +117,7 @@
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnPrint.ForeColor = System.Drawing.SystemColors.Window;
             this.btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrint.Location = new System.Drawing.Point(1242, 124);
+            this.btnPrint.Location = new System.Drawing.Point(889, 125);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 36);
             this.btnPrint.TabIndex = 19;
@@ -138,7 +138,7 @@
             "8",
             "9",
             "10"});
-            this.cmbClass.Location = new System.Drawing.Point(719, 135);
+            this.cmbClass.Location = new System.Drawing.Point(1035, 133);
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Size = new System.Drawing.Size(121, 21);
             this.cmbClass.TabIndex = 38;
@@ -146,7 +146,7 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(667, 138);
+            this.label.Location = new System.Drawing.Point(983, 136);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(32, 13);
             this.label.TabIndex = 39;
@@ -155,7 +155,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(906, 136);
+            this.label3.Location = new System.Drawing.Point(1162, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 41;
@@ -169,7 +169,7 @@
             "B",
             "C",
             "D"});
-            this.cmbSection.Location = new System.Drawing.Point(958, 133);
+            this.cmbSection.Location = new System.Drawing.Point(1214, 133);
             this.cmbSection.Name = "cmbSection";
             this.cmbSection.Size = new System.Drawing.Size(121, 21);
             this.cmbSection.TabIndex = 40;

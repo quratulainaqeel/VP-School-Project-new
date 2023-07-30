@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmStudentAttendanceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentAttendanceView.Designer.cs">
+      <DependentUpon>frmStudentAttendanceView.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStudentDetailsVeiw.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,12 +106,6 @@
     </Compile>
     <Compile Include="frmStudentPersonalDetails.Designer.cs">
       <DependentUpon>frmStudentPersonalDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAttendenceVeiw.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAttendenceVeiw.Designer.cs">
-      <DependentUpon>frmAttendenceVeiw.cs</DependentUpon>
     </Compile>
     <Compile Include="frmExamination .cs">
       <SubType>Form</SubType>
@@ -163,6 +163,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmStudentAttendanceView.resx">
+      <DependentUpon>frmStudentAttendanceView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStudentDetailsVeiw.resx">
       <DependentUpon>frmStudentDetailsVeiw.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,9 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentPersonalDetails.resx">
       <DependentUpon>frmStudentPersonalDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAttendenceVeiw.resx">
-      <DependentUpon>frmAttendenceVeiw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmExamination .resx">
       <DependentUpon>frmExamination .cs</DependentUpon>

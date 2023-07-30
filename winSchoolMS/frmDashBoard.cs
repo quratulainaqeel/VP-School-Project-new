@@ -99,7 +99,7 @@ namespace winSchoolMS
 
         private void viewAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAttendenceVeiw obj = new frmAttendenceVeiw();
+            frmStudentAttendanceView obj = new frmStudentAttendanceView();
             obj.Show();
         }
     }

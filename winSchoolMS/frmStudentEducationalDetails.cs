@@ -27,6 +27,9 @@ namespace winSchoolMS
             DataTable dt = new DataTable();
             da.Fill(dt);
             gvEducationalDetail.DataSource = dt;
+
+            txtfullname.Enabled = false;
+            txtFatherName.Enabled = false;
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
@@ -58,6 +61,8 @@ namespace winSchoolMS
                 cmbClass.Text = "";
                 cmbSection.Text = "";
 
+                txtfullname.Enabled = false;
+                txtFatherName.Enabled = false;
 
                 SqlDataAdapter da = new SqlDataAdapter("Select * from tblStudentEducationalDetails order by EnrollmentNo desc", con);
                 DataTable dt = new DataTable();
@@ -82,6 +87,9 @@ namespace winSchoolMS
             dtpAdmissionDate.Value = DateTime.Today;
             cmbClass.Text = "";
             cmbSection.Text = "";
+
+            txtfullname.Enabled = false;
+            txtFatherName.Enabled = false;
 
 
             SqlDataAdapter da = new SqlDataAdapter("Select * from tblStudentEducationalDetails order by EnrollmentNo", con);
@@ -109,6 +117,9 @@ namespace winSchoolMS
             cmbClass.Text = stuclass;
             cmbSection.Text = section;
 
+            txtfullname.Enabled = false;
+            txtFatherName.Enabled = false;
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -131,6 +142,9 @@ namespace winSchoolMS
             cmbClass.Text = "";
             cmbSection.Text = "";
 
+            txtfullname.Enabled = false;
+            txtFatherName.Enabled = false;
+
             MessageBox.Show("Data Deleted Sucessfully");
         }
 
@@ -144,6 +158,8 @@ namespace winSchoolMS
 
             DataTable dt = new DataTable();
             da.Fill(dt);
+            txtfullname.Enabled = false;
+            txtFatherName.Enabled = false;
 
             if (dt.Rows.Count > 0)
             {
@@ -153,7 +169,7 @@ namespace winSchoolMS
             else
             {
                 txtfullname.Text = string.Empty;
-                txtfullname.Text = string.Empty;                
+                txtFatherName.Text = string.Empty;                
             }
         }
     }
