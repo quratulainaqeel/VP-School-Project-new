@@ -69,7 +69,7 @@
             // 
             // txtTotalAmount
             // 
-            this.txtTotalAmount.Location = new System.Drawing.Point(631, 345);
+            this.txtTotalAmount.Location = new System.Drawing.Point(631, 334);
             this.txtTotalAmount.Multiline = true;
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.Size = new System.Drawing.Size(165, 20);
@@ -81,7 +81,7 @@
             this.label14.BackColor = System.Drawing.SystemColors.Window;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(527, 346);
+            this.label14.Location = new System.Drawing.Point(527, 335);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(98, 16);
             this.label14.TabIndex = 63;
@@ -114,9 +114,9 @@
             // 
             this.gvFeesPayment.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvFeesPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvFeesPayment.Location = new System.Drawing.Point(7, 473);
+            this.gvFeesPayment.Location = new System.Drawing.Point(48, 455);
             this.gvFeesPayment.Name = "gvFeesPayment";
-            this.gvFeesPayment.Size = new System.Drawing.Size(1356, 247);
+            this.gvFeesPayment.Size = new System.Drawing.Size(1286, 209);
             this.gvFeesPayment.TabIndex = 59;
             this.gvFeesPayment.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvFeesPayment_CellClick);
             // 
@@ -254,7 +254,7 @@
             this.btnInsert.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnInsert.Location = new System.Drawing.Point(454, 401);
+            this.btnInsert.Location = new System.Drawing.Point(451, 390);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 41);
             this.btnInsert.TabIndex = 65;
@@ -267,7 +267,7 @@
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnUpdate.Location = new System.Drawing.Point(683, 401);
+            this.btnUpdate.Location = new System.Drawing.Point(680, 390);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 41);
             this.btnUpdate.TabIndex = 66;
@@ -280,7 +280,7 @@
             this.btnDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnDelete.Location = new System.Drawing.Point(909, 401);
+            this.btnDelete.Location = new System.Drawing.Point(906, 390);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 41);
             this.btnDelete.TabIndex = 67;

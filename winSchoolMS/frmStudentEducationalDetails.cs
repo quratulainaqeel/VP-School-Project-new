@@ -75,7 +75,7 @@ namespace winSchoolMS
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string QRY = "Update tblStudentEducationalDetails set EnrollmentNo  = '"+txtenrollmentnumber.Text+"', FullName = '" + txtfullname.Text + "', FatherName = '" + txtFatherName.Text + "', AdmissionDate = '"+dtpAdmissionDate.Text+"' , Class = '"+cmbClass.Text+"' , Section = '"+cmbSection.Text+"' where AdmissionID = " + admissionID;
+            string QRY = "Update tblStudentEducationalDetails set EnrollmentNo  = '"+txtenrollmentnumber.Text+"', AdmissionDate = '"+dtpAdmissionDate.Text+"' , Class = '"+cmbClass.Text+"' , Section = '"+cmbSection.Text+"' where AdmissionID = " + admissionID;
             SqlCommand cmd = new SqlCommand(QRY, con);
             con.Open();
             cmd.ExecuteNonQuery();

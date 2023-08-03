@@ -32,13 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDSLSearch = new System.Windows.Forms.TextBox();
-            this.gvDefaulterrStudent = new System.Windows.Forms.DataGridView();
+            this.gvDefaulterStudent = new System.Windows.Forms.DataGridView();
             this.cmbMonth = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDefaulterrStudent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvDefaulterStudent)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,31 +74,31 @@
             this.txtDSLSearch.Size = new System.Drawing.Size(583, 28);
             this.txtDSLSearch.TabIndex = 2;
             // 
-            // gvDefaulterrStudent
+            // gvDefaulterStudent
             // 
-            this.gvDefaulterrStudent.BackgroundColor = System.Drawing.Color.LightGray;
-            this.gvDefaulterrStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvDefaulterrStudent.Location = new System.Drawing.Point(169, 217);
-            this.gvDefaulterrStudent.Name = "gvDefaulterrStudent";
-            this.gvDefaulterrStudent.Size = new System.Drawing.Size(1050, 402);
-            this.gvDefaulterrStudent.TabIndex = 4;
+            this.gvDefaulterStudent.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gvDefaulterStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvDefaulterStudent.Location = new System.Drawing.Point(169, 217);
+            this.gvDefaulterStudent.Name = "gvDefaulterStudent";
+            this.gvDefaulterStudent.Size = new System.Drawing.Size(1050, 402);
+            this.gvDefaulterStudent.TabIndex = 4;
             // 
             // cmbMonth
             // 
             this.cmbMonth.FormattingEnabled = true;
             this.cmbMonth.Items.AddRange(new object[] {
-            "One Month",
-            "Two Month\'s",
-            "Three Month\'s",
-            "Four Month\'s",
-            "Five Month\'s",
-            "Six Month\'s",
-            "Seven Month\'s",
-            "Eight Month\'s",
-            "Nine Month\'s",
-            "Ten Month\'s",
-            "Eleven Month\'s",
-            "One Year"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.cmbMonth.Location = new System.Drawing.Point(865, 161);
             this.cmbMonth.Name = "cmbMonth";
             this.cmbMonth.Size = new System.Drawing.Size(157, 21);
@@ -139,6 +139,7 @@
             this.btnSearch.TabIndex = 50;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel1
             // 
@@ -159,7 +160,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbMonth);
-            this.Controls.Add(this.gvDefaulterrStudent);
+            this.Controls.Add(this.gvDefaulterStudent);
             this.Controls.Add(this.txtDSLSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -168,7 +169,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Defultarstudent";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.gvDefaulterrStudent)).EndInit();
+            this.Load += new System.EventHandler(this.frmDefultarstudent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvDefaulterStudent)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -181,7 +183,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDSLSearch;
-        private System.Windows.Forms.DataGridView gvDefaulterrStudent;
+        private System.Windows.Forms.DataGridView gvDefaulterStudent;
         private System.Windows.Forms.ComboBox cmbMonth;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnPrint;
