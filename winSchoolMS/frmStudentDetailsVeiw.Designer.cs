@@ -35,7 +35,6 @@
             this.gvStudentDetailSearch = new System.Windows.Forms.DataGridView();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.cmbClass = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -111,19 +110,6 @@
             this.panel1.Size = new System.Drawing.Size(1430, 65);
             this.panel1.TabIndex = 37;
             // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnPrint.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrint.Location = new System.Drawing.Point(889, 125);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 36);
-            this.btnPrint.TabIndex = 19;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = false;
-            // 
             // cmbClass
             // 
             this.cmbClass.FormattingEnabled = true;
@@ -138,15 +124,15 @@
             "8",
             "9",
             "10"});
-            this.cmbClass.Location = new System.Drawing.Point(1035, 133);
+            this.cmbClass.Location = new System.Drawing.Point(955, 133);
             this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Size = new System.Drawing.Size(121, 21);
+            this.cmbClass.Size = new System.Drawing.Size(146, 21);
             this.cmbClass.TabIndex = 38;
             // 
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(983, 136);
+            this.label.Location = new System.Drawing.Point(917, 136);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(32, 13);
             this.label.TabIndex = 39;
@@ -155,7 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1162, 136);
+            this.label3.Location = new System.Drawing.Point(1132, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 41;
@@ -169,9 +155,9 @@
             "B",
             "C",
             "D"});
-            this.cmbSection.Location = new System.Drawing.Point(1214, 133);
+            this.cmbSection.Location = new System.Drawing.Point(1181, 134);
             this.cmbSection.Name = "cmbSection";
-            this.cmbSection.Size = new System.Drawing.Size(121, 21);
+            this.cmbSection.Size = new System.Drawing.Size(146, 21);
             this.cmbSection.TabIndex = 40;
             // 
             // frmStudentDetailsVeiw
@@ -184,7 +170,6 @@
             this.Controls.Add(this.cmbSection);
             this.Controls.Add(this.label);
             this.Controls.Add(this.cmbClass);
-            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.gvStudentDetailSearch);
             this.Controls.Add(this.txtsearch);
@@ -212,7 +197,6 @@
         private System.Windows.Forms.DataGridView gvStudentDetailSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.ComboBox cmbClass;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label3;

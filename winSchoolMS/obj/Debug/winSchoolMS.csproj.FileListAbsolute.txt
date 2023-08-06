@@ -110,3 +110,5 @@ H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.Main.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmTeacherInformation.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmFeePayment.resources
 H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmStudentAttendanceView.resources
+H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmCourse.resources
+H:\VP-School-Project-new\winSchoolMS\obj\Debug\winSchoolMS.frmExamReport.resources

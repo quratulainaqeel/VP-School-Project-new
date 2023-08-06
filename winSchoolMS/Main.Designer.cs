@@ -53,6 +53,9 @@
             this.examinationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.examinationDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miscellinousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.examReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +68,8 @@
             this.accountsToolStripMenuItem,
             this.courseAllocationToolStripMenuItem,
             this.examinationToolStripMenuItem,
-            this.miscellinousToolStripMenuItem});
+            this.miscellinousToolStripMenuItem,
+            this.courseToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1370, 24);
@@ -207,7 +211,8 @@
             // 
             this.examinationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.examinationToolStripMenuItem1,
-            this.examinationDetailToolStripMenuItem});
+            this.examinationDetailToolStripMenuItem,
+            this.examReportToolStripMenuItem});
             this.examinationToolStripMenuItem.Name = "examinationToolStripMenuItem";
             this.examinationToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.examinationToolStripMenuItem.Text = "Examination";
@@ -215,14 +220,14 @@
             // examinationToolStripMenuItem1
             // 
             this.examinationToolStripMenuItem1.Name = "examinationToolStripMenuItem1";
-            this.examinationToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.examinationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.examinationToolStripMenuItem1.Text = "Examination";
             this.examinationToolStripMenuItem1.Click += new System.EventHandler(this.examinationToolStripMenuItem1_Click);
             // 
             // examinationDetailToolStripMenuItem
             // 
             this.examinationDetailToolStripMenuItem.Name = "examinationDetailToolStripMenuItem";
-            this.examinationDetailToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.examinationDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.examinationDetailToolStripMenuItem.Text = "Examination Detail";
             this.examinationDetailToolStripMenuItem.Click += new System.EventHandler(this.examinationDetailToolStripMenuItem_Click);
             // 
@@ -231,6 +236,28 @@
             this.miscellinousToolStripMenuItem.Name = "miscellinousToolStripMenuItem";
             this.miscellinousToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.miscellinousToolStripMenuItem.Text = "Miscellinous";
+            // 
+            // courseToolStripMenuItem
+            // 
+            this.courseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.coursesToolStripMenuItem});
+            this.courseToolStripMenuItem.Name = "courseToolStripMenuItem";
+            this.courseToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.courseToolStripMenuItem.Text = "Course";
+            // 
+            // coursesToolStripMenuItem
+            // 
+            this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
+            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.coursesToolStripMenuItem.Text = "Courses";
+            this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
+            // 
+            // examReportToolStripMenuItem
+            // 
+            this.examReportToolStripMenuItem.Name = "examReportToolStripMenuItem";
+            this.examReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.examReportToolStripMenuItem.Text = "Exam Report";
+            this.examReportToolStripMenuItem.Click += new System.EventHandler(this.examReportToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -274,6 +301,9 @@
         private System.Windows.Forms.ToolStripMenuItem miscellinousToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teacherDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teacherDetailsViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem courseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem examReportToolStripMenuItem;
     }
 }
 

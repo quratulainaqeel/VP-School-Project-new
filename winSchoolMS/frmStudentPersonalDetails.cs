@@ -190,11 +190,6 @@ namespace winSchoolMS
             cmd.ExecuteNonQuery();
             con.Close();
 
-            SqlDataAdapter da = new SqlDataAdapter("Select * from tblStudentPersonalDetails order by StudentID desc", con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            gvStudentPersonalDetails.DataSource = dt;
-
             txtenrollmentnumber.Text = "";
             txtFullName.Text = "";
             txtFatherName.Text = "";
@@ -207,6 +202,13 @@ namespace winSchoolMS
             txtNationality.Text = "";
             rdbmale.Checked = false;
             rdbfemale.Checked = false;
+
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tblStudentPersonalDetails order by StudentID desc", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gvStudentPersonalDetails.DataSource = dt;
+
+           
             MessageBox.Show("Data Deleted Sucessfully");
         }
     }

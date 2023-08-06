@@ -74,6 +74,7 @@
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.Size = new System.Drawing.Size(165, 20);
             this.txtTotalAmount.TabIndex = 64;
+            this.txtTotalAmount.Text = "0";
             // 
             // label14
             // 
@@ -137,6 +138,7 @@
             this.txtFine.Name = "txtFine";
             this.txtFine.Size = new System.Drawing.Size(165, 20);
             this.txtFine.TabIndex = 51;
+            this.txtFine.Text = "0";
             this.txtFine.TextChanged += new System.EventHandler(this.txtFine_TextChanged);
             // 
             // label10
@@ -156,6 +158,7 @@
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(165, 20);
             this.txtDiscount.TabIndex = 49;
+            this.txtDiscount.Text = "0";
             this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
             // 
             // label9
@@ -186,6 +189,7 @@
             this.txtExaminationFee.Name = "txtExaminationFee";
             this.txtExaminationFee.Size = new System.Drawing.Size(165, 20);
             this.txtExaminationFee.TabIndex = 45;
+            this.txtExaminationFee.Text = "0";
             this.txtExaminationFee.TextChanged += new System.EventHandler(this.txtExaminationFee_TextChanged);
             // 
             // label7
@@ -216,6 +220,7 @@
             this.txtLabFee.Name = "txtLabFee";
             this.txtLabFee.Size = new System.Drawing.Size(165, 20);
             this.txtLabFee.TabIndex = 41;
+            this.txtLabFee.Text = "0";
             this.txtLabFee.TextChanged += new System.EventHandler(this.txtLabFee_TextChanged);
             // 
             // label5
@@ -339,6 +344,7 @@
             this.txtMonthlyfee.Name = "txtMonthlyfee";
             this.txtMonthlyfee.Size = new System.Drawing.Size(165, 20);
             this.txtMonthlyfee.TabIndex = 78;
+            this.txtMonthlyfee.Text = "0";
             this.txtMonthlyfee.TextChanged += new System.EventHandler(this.txtMonthlyfee_TextChanged);
             // 
             // label12

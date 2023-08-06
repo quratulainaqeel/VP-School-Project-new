@@ -72,7 +72,6 @@ namespace winSchoolMS
                 MessageBox.Show("Data Inserted Sucessfully");
             }
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             string QRY = "Update tblStudentEducationalDetails set EnrollmentNo  = '"+txtenrollmentnumber.Text+"', AdmissionDate = '"+dtpAdmissionDate.Text+"' , Class = '"+cmbClass.Text+"' , Section = '"+cmbSection.Text+"' where AdmissionID = " + admissionID;

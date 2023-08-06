@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmExamReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamReport.Designer.cs">
+      <DependentUpon>frmExamReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStudentAttendanceView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     </Compile>
     <Compile Include="frmStudentAttendance.Designer.cs">
       <DependentUpon>frmStudentAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCourse.Designer.cs">
+      <DependentUpon>frmCourse.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTeacherAttendance.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmExamReport.resx">
+      <DependentUpon>frmExamReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStudentAttendanceView.resx">
       <DependentUpon>frmStudentAttendanceView.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentAttendance.resx">
       <DependentUpon>frmStudentAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCourse.resx">
+      <DependentUpon>frmCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTeacherAttendance.resx">
       <DependentUpon>frmTeacherAttendance.cs</DependentUpon>

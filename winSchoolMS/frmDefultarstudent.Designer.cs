@@ -31,13 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDefultarstudent));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDSLSearch = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.gvDefaulterStudent = new System.Windows.Forms.DataGridView();
-            this.cmbMonth = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbSection = new System.Windows.Forms.ComboBox();
+            this.cmbClass = new System.Windows.Forms.ComboBox();
+            this.cmbMonth = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvDefaulterStudent)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,43 +69,22 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Search";
             // 
-            // txtDSLSearch
+            // txtSearch
             // 
-            this.txtDSLSearch.Location = new System.Drawing.Point(225, 160);
-            this.txtDSLSearch.Multiline = true;
-            this.txtDSLSearch.Name = "txtDSLSearch";
-            this.txtDSLSearch.Size = new System.Drawing.Size(583, 28);
-            this.txtDSLSearch.TabIndex = 2;
+            this.txtSearch.Location = new System.Drawing.Point(225, 160);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(913, 28);
+            this.txtSearch.TabIndex = 2;
             // 
             // gvDefaulterStudent
             // 
             this.gvDefaulterStudent.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvDefaulterStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvDefaulterStudent.Location = new System.Drawing.Point(169, 217);
+            this.gvDefaulterStudent.Location = new System.Drawing.Point(169, 254);
             this.gvDefaulterStudent.Name = "gvDefaulterStudent";
-            this.gvDefaulterStudent.Size = new System.Drawing.Size(1050, 402);
+            this.gvDefaulterStudent.Size = new System.Drawing.Size(1050, 365);
             this.gvDefaulterStudent.TabIndex = 4;
-            // 
-            // cmbMonth
-            // 
-            this.cmbMonth.FormattingEnabled = true;
-            this.cmbMonth.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.cmbMonth.Location = new System.Drawing.Point(865, 161);
-            this.cmbMonth.Name = "cmbMonth";
-            this.cmbMonth.Size = new System.Drawing.Size(157, 21);
-            this.cmbMonth.TabIndex = 5;
             // 
             // label3
             // 
@@ -110,30 +92,18 @@
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label3.Location = new System.Drawing.Point(816, 166);
+            this.label3.Location = new System.Drawing.Point(230, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Month";
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Location = new System.Drawing.Point(1127, 152);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 36);
-            this.btnPrint.TabIndex = 51;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSearch.Location = new System.Drawing.Point(1046, 151);
+            this.btnSearch.Location = new System.Drawing.Point(1144, 156);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 36);
             this.btnSearch.TabIndex = 50;
@@ -150,18 +120,99 @@
             this.panel1.Size = new System.Drawing.Size(1373, 65);
             this.panel1.TabIndex = 52;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Window;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label6.Location = new System.Drawing.Point(550, 219);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 16);
+            this.label6.TabIndex = 102;
+            this.label6.Text = "Class";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Window;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label5.Location = new System.Drawing.Point(877, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 101;
+            this.label5.Text = "Section";
+            // 
+            // cmbSection
+            // 
+            this.cmbSection.FormattingEnabled = true;
+            this.cmbSection.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.cmbSection.Location = new System.Drawing.Point(946, 218);
+            this.cmbSection.Name = "cmbSection";
+            this.cmbSection.Size = new System.Drawing.Size(157, 21);
+            this.cmbSection.TabIndex = 100;
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.FormattingEnabled = true;
+            this.cmbClass.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbClass.Location = new System.Drawing.Point(609, 217);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Size = new System.Drawing.Size(157, 21);
+            this.cmbClass.TabIndex = 99;
+            // 
+            // cmbMonth
+            // 
+            this.cmbMonth.FormattingEnabled = true;
+            this.cmbMonth.Items.AddRange(new object[] {
+            "Select Month",
+            "January",
+            "February",
+            "March",
+            "Aprail",
+            "May",
+            "June",
+            "July",
+            "Augest",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmbMonth.Location = new System.Drawing.Point(288, 214);
+            this.cmbMonth.Name = "cmbMonth";
+            this.cmbMonth.Size = new System.Drawing.Size(157, 21);
+            this.cmbMonth.TabIndex = 104;
+            // 
             // frmDefultarstudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.cmbMonth);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cmbSection);
+            this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmbMonth);
             this.Controls.Add(this.gvDefaulterStudent);
-            this.Controls.Add(this.txtDSLSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -182,12 +233,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDSLSearch;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView gvDefaulterStudent;
-        private System.Windows.Forms.ComboBox cmbMonth;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbSection;
+        private System.Windows.Forms.ComboBox cmbClass;
+        private System.Windows.Forms.ComboBox cmbMonth;
     }
 }

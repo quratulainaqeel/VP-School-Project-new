@@ -102,13 +102,12 @@ namespace winproject
                 AttendanceStatus = "Leave";
             }
             
-            string QRY = "Insert into tblStudentAttendane (EnrollmentNo, FullName, Class, Section, Month, Date, Time, AttendanceStatus) Values('" + cmbEnrollmentNo.Text + "','" + txtfullname.Text + "','" + cmbClass.Text + "','" + cmbSection.Text + "','" + cmbSection.Text + "','" + dtpDate.Text + "','" + dtpTime.Text + "','" + AttendanceStatus + "')";
+            string QRY = "Insert into tblStudentAttendane (EnrollmentNo, FullName, Class, Section, Month, Date, Time, AttendanceStatus) Values('" + cmbEnrollmentNo.Text + "','" + txtfullname.Text + "','" + cmbClass.Text + "','" + cmbSection.Text + "','" + cmbMonth.Text + "','" + dtpDate.Text + "','" + dtpTime.Text + "','" + AttendanceStatus + "')";
             SqlCommand cmd = new SqlCommand(QRY, con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
 
-           // cmbEnrollmentNo.SelectedIndex = 0;            
             cmbClass.SelectedIndex = 0;
             cmbSection.Text = "";
             txtfullname.Text = "";

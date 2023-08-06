@@ -264,9 +264,9 @@
             this.gvStudentPersonalDetails.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.gvStudentPersonalDetails.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvStudentPersonalDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvStudentPersonalDetails.Location = new System.Drawing.Point(29, 426);
+            this.gvStudentPersonalDetails.Location = new System.Drawing.Point(29, 418);
             this.gvStudentPersonalDetails.Name = "gvStudentPersonalDetails";
-            this.gvStudentPersonalDetails.Size = new System.Drawing.Size(1308, 246);
+            this.gvStudentPersonalDetails.Size = new System.Drawing.Size(1308, 212);
             this.gvStudentPersonalDetails.TabIndex = 61;
             this.gvStudentPersonalDetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvStudentPersonalDetails_CellClick);
             // 
@@ -302,7 +302,7 @@
             this.btnInsert.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnInsert.Location = new System.Drawing.Point(413, 352);
+            this.btnInsert.Location = new System.Drawing.Point(413, 344);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 42);
             this.btnInsert.TabIndex = 67;
@@ -315,7 +315,7 @@
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnUpdate.Location = new System.Drawing.Point(641, 352);
+            this.btnUpdate.Location = new System.Drawing.Point(641, 344);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 42);
             this.btnUpdate.TabIndex = 68;
@@ -328,7 +328,7 @@
             this.btnDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnDelete.Location = new System.Drawing.Point(876, 352);
+            this.btnDelete.Location = new System.Drawing.Point(876, 344);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 42);
             this.btnDelete.TabIndex = 69;

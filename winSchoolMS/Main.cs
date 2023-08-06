@@ -200,5 +200,19 @@ namespace winSchoolMS
             obj.MdiParent = this;
             obj.Show();
         }
+
+        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCourse obj = new frmCourse();
+            obj.MdiParent = this;
+            obj.Show();
+        }
+
+        private void examReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExamReport obj = new frmExamReport();
+            obj.MdiParent = this;
+            obj.Show();
+        }
     }
 }

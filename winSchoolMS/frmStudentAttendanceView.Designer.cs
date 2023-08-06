@@ -51,7 +51,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.Window;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Location = new System.Drawing.Point(403, 185);
+            this.label6.Location = new System.Drawing.Point(516, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 16);
             this.label6.TabIndex = 98;
@@ -63,7 +63,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(606, 185);
+            this.label5.Location = new System.Drawing.Point(839, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 97;
@@ -77,9 +77,9 @@
             "B",
             "C",
             "D"});
-            this.cmbSection.Location = new System.Drawing.Point(663, 183);
+            this.cmbSection.Location = new System.Drawing.Point(897, 183);
             this.cmbSection.Name = "cmbSection";
-            this.cmbSection.Size = new System.Drawing.Size(121, 21);
+            this.cmbSection.Size = new System.Drawing.Size(172, 21);
             this.cmbSection.TabIndex = 96;
             // 
             // cmbClass
@@ -96,9 +96,9 @@
             "8",
             "9",
             "10"});
-            this.cmbClass.Location = new System.Drawing.Point(452, 183);
+            this.cmbClass.Location = new System.Drawing.Point(563, 183);
             this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Size = new System.Drawing.Size(121, 21);
+            this.cmbClass.Size = new System.Drawing.Size(172, 21);
             this.cmbClass.TabIndex = 95;
             // 
             // cmbMonth
@@ -120,7 +120,7 @@
             "December"});
             this.cmbMonth.Location = new System.Drawing.Point(249, 183);
             this.cmbMonth.Name = "cmbMonth";
-            this.cmbMonth.Size = new System.Drawing.Size(130, 21);
+            this.cmbMonth.Size = new System.Drawing.Size(172, 21);
             this.cmbMonth.TabIndex = 94;
             // 
             // label4

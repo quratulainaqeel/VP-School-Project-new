@@ -32,28 +32,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExaminationDetail));
-            this.btnPrint = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.gvSearch = new System.Windows.Forms.DataGridView();
+            this.gvExamination = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.gvSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvExamination)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Location = new System.Drawing.Point(1123, 156);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 36);
-            this.btnPrint.TabIndex = 50;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
@@ -66,10 +53,11 @@
             this.btnSearch.TabIndex = 49;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // gvSearch
+            // gvExamination
             // 
-            this.gvSearch.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gvExamination.BackgroundColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,8 +65,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvSearch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvExamination.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gvExamination.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,10 +74,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvSearch.DefaultCellStyle = dataGridViewCellStyle2;
-            this.gvSearch.GridColor = System.Drawing.SystemColors.InactiveCaption;
-            this.gvSearch.Location = new System.Drawing.Point(158, 221);
-            this.gvSearch.Name = "gvSearch";
+            this.gvExamination.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gvExamination.GridColor = System.Drawing.SystemColors.InactiveCaption;
+            this.gvExamination.Location = new System.Drawing.Point(158, 221);
+            this.gvExamination.Name = "gvExamination";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,9 +85,9 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvSearch.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gvSearch.Size = new System.Drawing.Size(1059, 416);
-            this.gvSearch.TabIndex = 48;
+            this.gvExamination.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.gvExamination.Size = new System.Drawing.Size(1059, 416);
+            this.gvExamination.TabIndex = 48;
             // 
             // txtSearch
             // 
@@ -148,9 +136,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.gvSearch);
+            this.Controls.Add(this.gvExamination);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -160,7 +147,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Examination Detail";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.gvSearch)).EndInit();
+            this.Load += new System.EventHandler(this.FrmExaminationDetail_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvExamination)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -169,10 +157,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.DataGridView gvSearch;
+        private System.Windows.Forms.DataGridView gvExamination;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

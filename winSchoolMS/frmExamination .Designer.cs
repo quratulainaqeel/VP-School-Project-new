@@ -52,15 +52,15 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.dvExamination = new System.Windows.Forms.DataGridView();
+            this.gvExamination = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbFinal = new System.Windows.Forms.RadioButton();
+            this.rdbMid = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dvExamination)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvExamination)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,17 +105,18 @@
             // 
             // txtClass
             // 
-            this.txtClass.Location = new System.Drawing.Point(1015, 126);
+            this.txtClass.Location = new System.Drawing.Point(1002, 129);
             this.txtClass.Name = "txtClass";
             this.txtClass.Size = new System.Drawing.Size(164, 20);
             this.txtClass.TabIndex = 19;
+            this.txtClass.TextChanged += new System.EventHandler(this.txtClass_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(945, 130);
+            this.label1.Location = new System.Drawing.Point(929, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 18;
@@ -126,7 +127,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(551, 191);
+            this.label5.Location = new System.Drawing.Point(546, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 24;
@@ -162,7 +163,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Window;
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(159, 239);
+            this.label10.Location = new System.Drawing.Point(164, 245);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 13);
             this.label10.TabIndex = 30;
@@ -190,17 +191,6 @@
             // cmbSubject
             // 
             this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Items.AddRange(new object[] {
-            "English ",
-            "Urdu",
-            "Math",
-            "Islamiyate",
-            "Pak study",
-            "Computer",
-            "Physics",
-            "Chemistry",
-            "Biology",
-            "Sindhi"});
             this.cmbSubject.Location = new System.Drawing.Point(627, 188);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(164, 21);
@@ -208,7 +198,7 @@
             // 
             // txtPercentage
             // 
-            this.txtPercentage.Location = new System.Drawing.Point(1015, 244);
+            this.txtPercentage.Location = new System.Drawing.Point(1002, 239);
             this.txtPercentage.Name = "txtPercentage";
             this.txtPercentage.Size = new System.Drawing.Size(164, 20);
             this.txtPercentage.TabIndex = 41;
@@ -218,7 +208,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.Window;
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(947, 249);
+            this.label12.Location = new System.Drawing.Point(929, 245);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(62, 13);
             this.label12.TabIndex = 40;
@@ -236,7 +226,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.Window;
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(552, 303);
+            this.label13.Location = new System.Drawing.Point(546, 300);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(37, 13);
             this.label13.TabIndex = 38;
@@ -247,7 +237,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.Window;
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(170, 300);
+            this.label14.Location = new System.Drawing.Point(164, 300);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(36, 13);
             this.label14.TabIndex = 37;
@@ -262,7 +252,7 @@
             // 
             // txtEvaluated
             // 
-            this.txtEvaluated.Location = new System.Drawing.Point(1015, 300);
+            this.txtEvaluated.Location = new System.Drawing.Point(1002, 296);
             this.txtEvaluated.Name = "txtEvaluated";
             this.txtEvaluated.Size = new System.Drawing.Size(164, 20);
             this.txtEvaluated.TabIndex = 45;
@@ -272,7 +262,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.Window;
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(945, 307);
+            this.label15.Location = new System.Drawing.Point(929, 300);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(70, 13);
             this.label15.TabIndex = 44;
@@ -290,56 +280,60 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.SystemColors.Window;
             this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label17.Location = new System.Drawing.Point(548, 133);
+            this.label17.Location = new System.Drawing.Point(546, 136);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(54, 13);
             this.label17.TabIndex = 48;
             this.label17.Text = "Full Name";
             // 
-            // dvExamination
+            // gvExamination
             // 
-            this.dvExamination.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dvExamination.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvExamination.Location = new System.Drawing.Point(106, 467);
-            this.dvExamination.Name = "dvExamination";
-            this.dvExamination.Size = new System.Drawing.Size(1163, 226);
-            this.dvExamination.TabIndex = 52;
+            this.gvExamination.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gvExamination.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvExamination.Location = new System.Drawing.Point(39, 429);
+            this.gvExamination.Name = "gvExamination";
+            this.gvExamination.Size = new System.Drawing.Size(1280, 226);
+            this.gvExamination.TabIndex = 52;
+            this.gvExamination.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvExamination_CellClick);
             // 
             // btnInsert
             // 
             this.btnInsert.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnInsert.Location = new System.Drawing.Point(441, 401);
+            this.btnInsert.Location = new System.Drawing.Point(438, 363);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 41);
             this.btnInsert.TabIndex = 53;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnUpdate.Location = new System.Drawing.Point(654, 401);
+            this.btnUpdate.Location = new System.Drawing.Point(651, 363);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 41);
             this.btnUpdate.TabIndex = 54;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnDelete.Location = new System.Drawing.Point(834, 401);
+            this.btnDelete.Location = new System.Drawing.Point(831, 363);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 41);
             this.btnDelete.TabIndex = 55;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // panel1
             // 
@@ -350,32 +344,32 @@
             this.panel1.Size = new System.Drawing.Size(1380, 65);
             this.panel1.TabIndex = 56;
             // 
-            // radioButton1
+            // rdbFinal
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(1030, 192);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 57;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Final";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbFinal.AutoSize = true;
+            this.rdbFinal.Location = new System.Drawing.Point(1017, 195);
+            this.rdbFinal.Name = "rdbFinal";
+            this.rdbFinal.Size = new System.Drawing.Size(47, 17);
+            this.rdbFinal.TabIndex = 57;
+            this.rdbFinal.TabStop = true;
+            this.rdbFinal.Text = "Final";
+            this.rdbFinal.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbMid
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(1083, 192);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(42, 17);
-            this.radioButton2.TabIndex = 58;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Mid";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbMid.AutoSize = true;
+            this.rdbMid.Location = new System.Drawing.Point(1070, 195);
+            this.rdbMid.Name = "rdbMid";
+            this.rdbMid.Size = new System.Drawing.Size(42, 17);
+            this.rdbMid.TabIndex = 58;
+            this.rdbMid.TabStop = true;
+            this.rdbMid.Text = "Mid";
+            this.rdbMid.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(942, 192);
+            this.label3.Location = new System.Drawing.Point(929, 195);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 59;
@@ -385,15 +379,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbMid);
+            this.Controls.Add(this.rdbFinal);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.dvExamination);
+            this.Controls.Add(this.gvExamination);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtEvaluated);
@@ -422,7 +416,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Examination";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dvExamination)).EndInit();
+            this.Load += new System.EventHandler(this.frmExamination_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvExamination)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -456,13 +451,13 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DataGridView dvExamination;
+        private System.Windows.Forms.DataGridView gvExamination;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbFinal;
+        private System.Windows.Forms.RadioButton rdbMid;
         private System.Windows.Forms.Label label3;
     }
 }
