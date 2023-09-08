@@ -13,7 +13,7 @@ namespace winSchoolMS
 {
     public partial class frmStudentDetailsVeiw : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP;Initial Catalog=dbSchoolMS;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-TDI2O10;Initial Catalog=dbSchoolMS;Integrated Security=True");
 
         public frmStudentDetailsVeiw()
         {
